@@ -321,4 +321,15 @@ footer {
     height: 167px;
     margin-right: 8px;
   }
+
+  .experience__box {
+    display: flex;
+  }
+
+  .experience__box-cv {
+    border: solid red;
+    margin-bottom: auto;
+    margin-top: 17px;
+    margin-right: -2px;
+  }
 }

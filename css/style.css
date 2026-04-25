@@ -308,4 +308,17 @@ footer {
   .experience-grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  .about__box {
+    display: flex;
+  }
+  .about__bio {
+    width: 401px;
+  }
+
+  .about__icon {
+    width: 167px;
+    height: 167px;
+    margin-right: 8px;
+  }
 }

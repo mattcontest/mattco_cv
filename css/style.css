@@ -302,11 +302,14 @@ footer {
   .skill-grid {
     grid-template-columns: repeat(4, 1fr);
     border: 2px solid blue;
-    width: 77%;
+    /* width: 77%; */
+    width: 81%;
   }
 
   .experience-grid {
     grid-template-columns: 1fr 1fr;
+    margin-right: auto;
+    margin-right: auto;
   }
 
   .about__box {
@@ -330,6 +333,21 @@ footer {
     border: solid red;
     margin-bottom: auto;
     margin-top: 17px;
+    /* margin-right: -2px; */
+  }
+
+  .education__box {
+    display: flex;
+  }
+
+  .education__box-icon {
+    border: solid red;
+    margin-bottom: auto;
+    margin-top: 17px;
     margin-right: -2px;
+  }
+
+  .education__box-cards {
+    margin-right: auto;
   }
 }

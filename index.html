@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mattco CV</title>
+    <!-- Remember to mention you are using Normalize!! -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="header__logo-icon"
+        src="./assets/mattco_logo.svg"
+        alt="mattco logo"
+      />
+      <h1 class="header__logo">Mattco</h1>
+    </header>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#about" class="nav__link">About</a>
+        </li>
+        <li class="nav__item">
+          <a href="#skills" class="nav__link">Skills</a>
+        </li>
+        <li class="nav__item">
+          <a href="#experience" class="nav__link">Experience</a>
+        </li>
+        <li class="nav__item">
+          <a href="#education" class="nav__link">Education</a>
+        </li>
+        <li class="nav__item">
+          <a href="#contacts" class="nav__link">Contacts</a>
+        </li>
+        <!-- <li><a href="" class="nav_link">Night/Day Toggle</a></li> -->
+      </ul>
+      <button
+        type="button"
+        class="nav__toggle"
+        aria-label="Toggle dark mode"
+      ></button>
+    </nav>
+    <main>
+      <section class="section section--about" id="about">
+        <h2 class="section__title">About</h2>
+        <p class="about__bio">
+          Product-focused frontend developer with a strong foundation in
+          full-stack web development, React, and user-centric design.
+          Experienced in building responsive, accessible web applications from
+          Figma prototypes to production deployment. Seeking to contribute as a
+          junior frontend engineer on teams where UX, clean code, and business
+          impact intersect
+        </p>
+      </section>
+      <!-- <div class="content_grid">
+
+    </div> -->
+      <section class="section section--skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <div class="skill__box">
+          <div class="skill-grid">
+            <article class="skill-card">
+              <div class="skill-card__box">
+                <h3 class="skill-card__title">Coding Languages</h3>
+              </div>
+              <ul class="skill-card__list">
+                <li class="skill-card__item">JavaScript</li>
+                <li class="skill-card__item">HTML</li>
+                <li class="skill-card__item">CSS3</li>
+                <li class="skill-card__item">Python 3</li>
+                <li class="skill-card__item">Java</li>
+              </ul>
+            </article>
+            <article class="skill-card">
+              <div class="skill-card__box">
+                <h3 class="skill-card__title">Frameworks & Libraries</h3>
+              </div>
+              <ul class="skill-card__list">
+                <li class="skill-card__item">React</li>
+                <li class="skill-card__item">Node.js</li>
+                <li class="skill-card__item">Express.js</li>
+                <li class="skill-card__item">Tailwind</li>
+                <li class="skill-card__item">Mongoose</li>
+              </ul>
+            </article>
+            <article class="skill-card">
+              <div class="skill-card__box">
+                <h3 class="skill-card__title">Database</h3>
+              </div>
+              <ul class="skill-card__list">
+                <li class="skill-card__item">MongoDB</li>
+                <li class="skill-card__item">MySQL</li>
+                <li class="skill-card__item">SQL</li>
+                <li class="skill-card__item">PostgreSQL</li>
+                <li class="skill-card__item">Firebase</li>
+              </ul>
+            </article>
+            <article class="skill-card">
+              <div class="skill-card__box">
+                <h3 class="skill-card__title">Tools</h3>
+              </div>
+              <ul class="skill-card__list">
+                <li class="skill-card__item">Git</li>
+                <li class="skill-card__item">Figma</li>
+                <li class="skill-card__item">Jest</li>
+                <li class="skill-card__item">Dev Tools</li>
+                <li class="skill-card__item">Webpack</li>
+                <li class="skill-card__item">Nginx</li>
+              </ul>
+            </article>
+          </div>
+
+          <img
+            class="skill__box-nut"
+            src="../mattco/assets/skills_nut.svg"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <section class="section section--experience" id="experience">
+        <h2 class="section__title">Experience</h2>
+        <div class="experience-grid">
+          <article class="project-card">
+            <h3 class="project-card__title">NewsExplorer</h3>
+            <p class="project-card__tag">Full Stack Web App</p>
+            <p class="project-card__description">Description here later</p>
+          </article>
+          <article class="project-card">
+            <h3 class="project-card__title">WTWR</h3>
+            <p class="project-card__tag">Full Stack Web App</p>
+            <p class="project-card__description">Description here later</p>
+          </article>
+          <article class="project-card">
+            <h3 class="project-card__title">
+              Northeastern University - Graduate Teaching Assistant
+            </h3>
+            <p class="project-card__tag">Sep 2023 - Dec 2023</p>
+            <p class="project-card__description">Description here later</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--education" id="education">
+        <h2 class="section__title">Education</h2>
+        <article class="degree-card">
+          <h3 class="degree-card__title">Technological University of Dublin</h3>
+          <p class="degree-card__dates">Jan 2026 - May 2026</p>
+          <p class="degree-card__degree">Master Qualifier in Computing</p>
+          <p class="degree-card__location">Dublin, Ireland</p>
+        </article>
+        <article class="degree-card">
+          <h3 class="degree-card__title">Northeastern University</h3>
+          <p class="degree-card__dates">Sep 2021 - Dec 2023</p>
+          <p class="degree-card__degree">
+            Master of Science in Computer Science
+          </p>
+          <p class="degree-card__location">San Jose, California</p>
+        </article>
+      </section>
+
+      <section class="section section--contacts" id="contacts">
+        <h2 class="section__title">Contacts</h2>
+        <ul class="contact-list">
+          <li class="contact-list__item">
+            <a href="http://www.mattco.io" class="contact-list__link">GitHub</a>
+          </li>
+          <li class="contact-list__item">
+            <a href="http://www.mattco.io" class="contact-list__link"
+              >LinkedIn</a
+            >
+          </li>
+          <li class="contact-list__item">
+            <a href="mailto:contact@mattco.io" class="contact-list__link"
+              >Email</a
+            >
+          </li>
+          <li class="contact-list__item">
+            <a href="tel:+00000000" class="contact-list__link">Phone</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer><p class="footer__text">&copy; Mattco 2026</p></footer>
+  </body>
+</html>

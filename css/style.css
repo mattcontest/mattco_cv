@@ -8,6 +8,17 @@
   src: url("../assets/fonts/CabinetGrotesk-Bold.otf");
 }
 
+.about__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__icon {
+  height: 250px;
+  width: 250px;
+}
+
 body {
   display: grid;
   /* grid-template-areas: "header" "nav" "main" "footer"; */
@@ -32,21 +43,136 @@ main {
 
 header {
   display: flex;
+  align-items: baseline;
+}
+
+/* .header__menu-mobile {
+    display: none;
+  } */
+
+.modal {
+  /* display: none; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  justify-content: center;
+  align-items: flex-start;
+  /* padding: 10px; */
+  /* padding-top: 36px; */
+  padding-top: 107px;
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+
+.modal_is_open {
+  display: flex;
+}
+
+.modal__content {
+  background: white;
+  /* width: 90%; */
+  width: 73%;
+  height: 53%;
+  max-width: 360px;
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modal__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modal__link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.modal__item {
+  display: flex;
+  align-items: center;
+}
+
+.modal__title {
+  font-family: "Cabinet-Bold";
+  font-size: 28px;
+  margin: 0;
+}
+
+.modal__close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #999;
+}
+
+.modal__icon {
+  width: 28px;
+  height: 28px;
+}
+
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal__theme-toggle {
+  background: none;
+  border: none;
+  align-self: center;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.header__logo {
+  font-weight: bold;
+  font-family: "Cabinet-Bold";
+  font-size: 56px;
+  margin-bottom: 2px;
+  margin-top: 33px;
+  margin-right: auto;
 }
 
 /* Mobile resolution */
+.header__menu-mobile {
+  /* border: solid red; */
+  border: none;
+  background: transparent;
+}
 
 .skill-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 38px;
+  gap: 13px;
 }
 
 .skill-card__box {
-  max-width: 240px;
+  /* max-width: 240px; */
+  /* max-width: 240px; */
   min-height: 63px;
   border: 2px solid beige;
   background-color: HSL(39, 100%, 97%);
+}
+
+.skill__box-icon-container {
+  display: flex;
+  justify-content: end;
 }
 
 /* .skill-card__title { */
@@ -58,6 +184,12 @@ header {
   grid-column: 1 /-1;
 } */
 
+.skill-card__item {
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+}
+
 .header__logo-icon {
   height: 35px;
   width: 35px;
@@ -66,19 +198,16 @@ header {
   margin-right: 3px;
 }
 
-.header__logo {
-  font-weight: bold;
-  font-family: "Cabinet-Bold";
-  font-size: 56px;
-  margin-bottom: 2px;
-  margin-top: 33px;
-}
-
 .section {
-  border: 3px solid red;
+  /* border: 3px solid red; */
   padding: 1rem;
   /* max-height: 600px;
   overflow: hidden; */
+}
+
+.project-card__title.neu {
+  font-size: 15px;
+  border: solid red;
 }
 
 .section--about {
@@ -101,6 +230,12 @@ header {
   background-color: rgb(232, 233, 237);
 }
 
+.contact-list__box {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+}
+
 .section__title {
   /* font-family: "Cabinet-Bold"; */
   font-family: "Cabinet";
@@ -108,11 +243,13 @@ header {
   margin: 0;
   word-break: break-word;
   overflow-wrap: break-word;
+  width: 262px;
 }
 
-.skill-card__list {
+/* .skill-card__list {
   list-style: none;
-}
+  margin-top: 8px;
+} */
 
 .skill-card__list {
   display: grid;
@@ -120,13 +257,30 @@ header {
   gap: 0.5rem;
   padding: 0;
   margin: 0;
+  margin-top: 8px;
 }
 
 .skill-card__title {
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 17px;
   /* border: 2px solid red; */
   gap: 2px;
   /* margin-left: 31px; */
+}
+
+.skill__box-nut {
+  display: none;
+}
+
+.experience__box-cv {
+  display: none;
+}
+
+.education__box-icon {
+  display: none;
+}
+.contact-list__box-icon {
+  display: none;
 }
 
 .experience-grid {
@@ -143,6 +297,7 @@ nav {
   background-color: #f2eada;
   border: 2px solid rgb(120, 117, 110);
   margin-bottom: 17px;
+  display: none;
 }
 
 .nav__toggle {
@@ -202,6 +357,7 @@ a {
   gap: 20px;
   padding: 0;
   margin: 0;
+  margin-bottom: auto;
 }
 
 footer {
@@ -218,6 +374,14 @@ footer {
 } */
 
 @media (max-width: 534px) {
+  /* .header__menu-mobile {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+  } */
+
   .nav__item {
     padding-left: 5px;
     padding-right: 5px;
@@ -228,16 +392,69 @@ footer {
     padding-left: 0;
   }
 
+  .skill-card__item-icon {
+    width: 15px;
+    height: 15px;
+  }
+
   .nav__link {
     font-weight: normal;
     letter-spacing: 0;
   }
+
+  /* .skill__box-nut {
+    display: block;
+  } */
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 521px) {
+  .skill-grid {
+    justify-items: center;
+  }
+  .skill-card__box {
+    width: 240px;
+  }
+} */
+
+/* @media screen and (min-width: 768px){ */
+@media screen and (min-width: 744px) {
+  nav {
+    display: flex;
+  }
+
+  .header__menu-mobile {
+    display: none;
+  }
+
   body {
     padding-right: 0;
     padding-left: 0;
+    /* border: solid purple; */
+  }
+
+  .skill-card__box {
+    max-width: 180px;
+  }
+
+  /* Ensuring that these icons turn back once we exit mobile mode */
+  .skill__box-nut {
+    display: block;
+  }
+
+  .experience__box-cv {
+    display: block;
+  }
+
+  .education__box-icon {
+    display: block;
+  }
+  .contact-list__box-icon {
+    display: block;
+  }
+
+  .skill-card__item-icon {
+    width: 15px;
+    height: 15px;
   }
 
   main {
@@ -254,14 +471,46 @@ footer {
   .experience-grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  .experience__box-icon-container {
+    display: flex;
+    justify-content: end;
+  }
+
+  .education__box-icon-container {
+    display: flex;
+    justify-content: end;
+  }
+
+  .contact-list__box-icon-container {
+    display: flex;
+    justify-content: end;
+  }
+
+  .skill-card__box {
+    width: 240px;
+    min-height: 63px;
+    border: 2px solid beige;
+    background-color: HSL(39, 100%, 97%);
+  }
+
+  .about__box {
+    display: block;
+  }
 }
 
 @media (min-width: 1200px) {
   /* Resetting the view for Desktop */
+
+  .header__menu-mobile {
+    display: none;
+  }
+
   body {
     padding-right: 35px;
     padding-left: 35px;
     padding-bottom: 24px;
+    border: none;
   }
 
   main {
@@ -273,10 +522,25 @@ footer {
     display: flex;
   }
 
+  .skill-card__box {
+    max-width: 240px;
+  }
+
   .skill__box-nut {
     /* border: solid red; */
     margin-left: 43px;
     margin-top: -2px;
+  }
+
+  .skill-card__item {
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+  }
+
+  .skill-card__item-icon {
+    width: 26px;
+    height: 26px;
   }
 
   /* .nav {
@@ -301,7 +565,7 @@ footer {
 
   .skill-grid {
     grid-template-columns: repeat(4, 1fr);
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     /* width: 77%; */
     width: 81%;
   }
@@ -329,8 +593,12 @@ footer {
     display: flex;
   }
 
+  .experience_test {
+    margin-right: auto;
+  }
+
   .experience__box-cv {
-    border: solid red;
+    /* border: solid red; */
     margin-bottom: auto;
     margin-top: 17px;
     /* margin-right: -2px; */
@@ -341,7 +609,7 @@ footer {
   }
 
   .education__box-icon {
-    border: solid red;
+    /* border: solid red; */
     margin-bottom: auto;
     margin-top: 17px;
     margin-right: -2px;
@@ -349,5 +617,18 @@ footer {
 
   .education__box-cards {
     margin-right: auto;
+  }
+
+  .contact-list__box {
+    display: flex;
+    height: 67%;
+  }
+
+  .contact-list {
+    margin-right: auto;
+  }
+
+  .about__box {
+    display: block;
   }
 }

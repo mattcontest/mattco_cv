@@ -9,6 +9,68 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <div class="modal" id="menu-modal">
+      <div class="modal__content">
+        <div class="modal__header">
+          <h2 class="modal__title">Menu</h2>
+          <button class="modal__close">X</button>
+        </div>
+
+        <ul class="modal__list">
+          <li class="modal__item">
+            <a href="#about" class="modal__link">
+              <img src="./assets/modal__about.svg" alt="" class="modal__icon" />
+              About
+            </a>
+          </li>
+          <li class="modal__item">
+            <a href="#skills" class="modal__link">
+              <img
+                src="./assets/modal__skills.svg"
+                alt=""
+                class="modal__icon"
+              />
+              Skills
+            </a>
+          </li>
+          <li class="modal__item">
+            <a href="#experience" class="modal__link">
+              <img src="./assets/modal__cv.svg" alt="" class="modal__icon" />
+              Experience
+            </a>
+          </li>
+          <li class="modal__item">
+            <a href="#education" class="modal__link">
+              <img
+                src="./assets/modal__education.svg"
+                alt=""
+                class="modal__icon"
+              />
+              Education
+            </a>
+          </li>
+          <li class="modal__item">
+            <a href="#contacts" class="modal__link">
+              <img
+                src="./assets/modal__contacts.svg"
+                alt=""
+                class="modal__icon"
+              />
+              Contacts
+            </a>
+          </li>
+        </ul>
+
+        <button class="modal__theme-toggle">
+          <img
+            src="./assets/modal_theme_toggle.svg"
+            alt=""
+            class="modal__theme-toggle-icon"
+          />
+        </button>
+      </div>
+    </div>
+
     <header class="header">
       <img
         class="header__logo-icon"
@@ -16,6 +78,9 @@
         alt="mattco logo"
       />
       <h1 class="header__logo">Mattco</h1>
+      <button class="header__menu-mobile">
+        <img src="./assets/menu.svg" alt="" />
+      </button>
     </header>
     <nav class="nav">
       <ul class="nav__list">
@@ -69,11 +134,46 @@
                 <h3 class="skill-card__title">Coding Languages</h3>
               </div>
               <ul class="skill-card__list">
-                <li class="skill-card__item">JavaScript</li>
-                <li class="skill-card__item">HTML</li>
-                <li class="skill-card__item">CSS3</li>
-                <li class="skill-card__item">Python 3</li>
-                <li class="skill-card__item">Java</li>
+                <li class="skill-card__item">
+                  <img
+                    src="./assets/js_icon.svg"
+                    alt=""
+                    class="skill-card__item-icon"
+                  />
+                  JavaScript
+                </li>
+                <li class="skill-card__item">
+                  <img
+                    src="./assets/html_5.svg"
+                    class="skill-card__item-icon"
+                    alt=""
+                  />
+                  HTML
+                </li>
+                <li class="skill-card__item">
+                  <img
+                    src="./assets/css3_icon.svg"
+                    class="skill-card__item-icon"
+                    alt=""
+                  />
+                  CSS3
+                </li>
+                <li class="skill-card__item">
+                  <img
+                    src="./assets/python_icon.svg"
+                    alt=""
+                    class="skill-card__item-icon"
+                  />
+                  Python 3
+                </li>
+                <li class="skill-card__item">
+                  <img
+                    src="./assets/java_icon.svg"
+                    class="skill-card__item-icon"
+                    alt=""
+                  />
+                  Java
+                </li>
               </ul>
             </article>
             <article class="skill-card">
@@ -81,11 +181,46 @@
                 <h3 class="skill-card__title">Frameworks & Libraries</h3>
               </div>
               <ul class="skill-card__list">
-                <li class="skill-card__item">React</li>
-                <li class="skill-card__item">Node.js</li>
-                <li class="skill-card__item">Express.js</li>
-                <li class="skill-card__item">Tailwind</li>
-                <li class="skill-card__item">Mongoose</li>
+                <li class="skill-card__item">
+                  <img
+                    src="./assets/react_icon.svg"
+                    class="skill-card__item-icon"
+                    alt=""
+                  />
+                  React
+                </li>
+                <li class="skill-card__item">
+                  <img
+                    src="./assets/next_icon.svg"
+                    alt=""
+                    class="skill-card__item-icon"
+                  />
+                  Node.js
+                </li>
+                <li class="skill-card__item">
+                  <img
+                    src="./assets/express_icon.svg"
+                    class="skill-card__item-icon"
+                    alt=""
+                  />
+                  Express.js
+                </li>
+                <li class="skill-card__item">
+                  <img
+                    src="./assets/tailwind_icon.svg"
+                    class="skill-card__item-icon"
+                    alt=""
+                  />
+                  Tailwind
+                </li>
+                <li class="skill-card__item">
+                  <img
+                    src="./assets/mongoose_icon.svg"
+                    class="skill-card__item-icon"
+                    alt=""
+                  />
+                  Mongoose
+                </li>
               </ul>
             </article>
             <article class="skill-card">
@@ -93,11 +228,46 @@
                 <h3 class="skill-card__title">Database</h3>
               </div>
               <ul class="skill-card__list">
-                <li class="skill-card__item">MongoDB</li>
-                <li class="skill-card__item">MySQL</li>
-                <li class="skill-card__item">SQL</li>
-                <li class="skill-card__item">PostgreSQL</li>
-                <li class="skill-card__item">Firebase</li>
+                <li class="skill-card__item">
+                  <img
+                    src="./assets/mongodb_icon.svg"
+                    class="skill-card__item-icon"
+                    alt=""
+                  />
+                  MongoDB
+                </li>
+                <li class="skill-card__item">
+                  <img
+                    src="./assets/mysql_icon.svg"
+                    class="skill-card__item-icon"
+                    alt=""
+                  />
+                  MySQL
+                </li>
+                <li class="skill-card__item">
+                  <img
+                    src="./assets/sql_icon.svg"
+                    class="skill-card__item-icon"
+                    alt=""
+                  />
+                  SQL
+                </li>
+                <li class="skill-card__item">
+                  <img
+                    src="./assets/postres_icon.svg"
+                    class="skill-card__item-icon"
+                    alt=""
+                  />
+                  PostgreSQL
+                </li>
+                <li class="skill-card__item">
+                  <img
+                    src="./assets/firebase_icon.svg"
+                    class="skill-card__item-icon"
+                    alt=""
+                  />
+                  Firebase
+                </li>
               </ul>
             </article>
             <article class="skill-card">
@@ -105,51 +275,100 @@
                 <h3 class="skill-card__title">Tools</h3>
               </div>
               <ul class="skill-card__list">
-                <li class="skill-card__item">Git</li>
-                <li class="skill-card__item">Figma</li>
-                <li class="skill-card__item">Jest</li>
-                <li class="skill-card__item">Dev Tools</li>
-                <li class="skill-card__item">Webpack</li>
-                <li class="skill-card__item">Nginx</li>
+                <li class="skill-card__item">
+                  <img
+                    src="./assets/git_icon.svg"
+                    class="skill-card__item-icon"
+                    alt=""
+                  />
+                  Git
+                </li>
+                <li class="skill-card__item">
+                  <img
+                    src="./assets/figma_icon.svg"
+                    class="skill-card__item-icon"
+                    alt=""
+                  />
+                  Figma
+                </li>
+                <li class="skill-card__item">
+                  <img
+                    src="./assets/jest_icon.svg"
+                    alt=""
+                    class="skill-card__item-icon"
+                  />
+                  Jest
+                </li>
+                <!-- <li class="skill-card__item">
+                  Dev Tools
+                  <img
+                    src="./assets/webpack_icon.svg"
+                    alt=""
+                    class="skill-card__item-icon"
+                  />
+                </li> -->
+                <li class="skill-card__item">
+                  <img
+                    src="./assets/webpack_icon.svg"
+                    alt=""
+                    class="skill-card__item-icon"
+                  />
+                  Webpack
+                </li>
+                <li class="skill-card__item">
+                  <img
+                    src="./assets/next_icon.svg"
+                    alt=""
+                    class="skill-card__item-icon"
+                  />
+                  Nginx
+                </li>
               </ul>
             </article>
           </div>
-
-          <img
-            class="skill__box-nut"
-            src="../mattco/assets/skills_nut.svg"
-            alt=""
-          />
+          <div class="skill__box-icon-container">
+            <img
+              class="skill__box-nut"
+              src="../mattco/assets/skills_nut.svg"
+              alt=""
+            />
+          </div>
         </div>
       </section>
 
       <section class="section section--experience" id="experience">
         <h2 class="section__title">Experience</h2>
         <div class="experience__box">
-          <div class="experience-grid">
-            <article class="project-card">
-              <h3 class="project-card__title">NewsExplorer</h3>
-              <p class="project-card__tag">Full Stack Web App</p>
-              <p class="project-card__description">Description here later</p>
-            </article>
-            <article class="project-card">
-              <h3 class="project-card__title">WTWR</h3>
-              <p class="project-card__tag">Full Stack Web App</p>
-              <p class="project-card__description">Description here later</p>
-            </article>
-            <article class="project-card">
-              <h3 class="project-card__title">
-                Northeastern University - Graduate Teaching Assistant
-              </h3>
-              <p class="project-card__tag">Sep 2023 - Dec 2023</p>
-              <p class="project-card__description">Description here later</p>
-            </article>
+          <div class="experience_test">
+            <div class="experience-grid">
+              <article class="project-card">
+                <h3 class="project-card__title">NewsExplorer</h3>
+                <p class="project-card__tag">Full Stack Web App</p>
+                <p class="project-card__description">Description here later</p>
+              </article>
+              <article class="project-card">
+                <h3 class="project-card__title">WTWR</h3>
+                <p class="project-card__tag">Full Stack Web App</p>
+                <p class="project-card__description">Description here later</p>
+              </article>
+              <article class="project-card">
+                <h3 class="project-card__title neu">
+                  Northeastern University - Graduate Teaching Assistant
+                </h3>
+                <p class="project-card__tag">Sep 2023 - Dec 2023</p>
+                <p class="project-card__description">Description here later</p>
+                <p class="project-card__description">Description here later</p>
+                <!-- <p class="project-card__description">Description here later</p> -->
+              </article>
+            </div>
           </div>
-          <img
-            src="../mattco/assets/cv_icon.svg"
-            alt=""
-            class="experience__box-cv"
-          />
+          <div class="experience__box-icon-container">
+            <img
+              src="../mattco/assets/cv_icon.svg"
+              alt=""
+              class="experience__box-cv"
+            />
+          </div>
         </div>
       </section>
 
@@ -174,34 +393,47 @@
               <p class="degree-card__location">San Jose, California</p>
             </article>
           </div>
-          <img
-            src="../mattco/assets/college_icon.svg"
-            alt=""
-            class="education__box-icon"
-          />
+          <div class="education__box-icon-container">
+            <img
+              src="../mattco/assets/college_icon.svg"
+              alt=""
+              class="education__box-icon"
+            />
+          </div>
         </div>
       </section>
 
       <section class="section section--contacts" id="contacts">
         <h2 class="section__title">Contacts</h2>
-        <ul class="contact-list">
-          <li class="contact-list__item">
-            <a href="http://www.mattco.io" class="contact-list__link">GitHub</a>
-          </li>
-          <li class="contact-list__item">
-            <a href="http://www.mattco.io" class="contact-list__link"
-              >LinkedIn</a
-            >
-          </li>
-          <li class="contact-list__item">
-            <a href="mailto:contact@mattco.io" class="contact-list__link"
-              >Email</a
-            >
-          </li>
-          <li class="contact-list__item">
-            <a href="tel:+00000000" class="contact-list__link">Phone</a>
-          </li>
-        </ul>
+        <div class="contact-list__box">
+          <ul class="contact-list">
+            <li class="contact-list__item">
+              <a href="http://www.mattco.io" class="contact-list__link"
+                >GitHub</a
+              >
+            </li>
+            <li class="contact-list__item">
+              <a href="http://www.mattco.io" class="contact-list__link"
+                >LinkedIn</a
+              >
+            </li>
+            <li class="contact-list__item">
+              <a href="mailto:contact@mattco.io" class="contact-list__link"
+                >Email</a
+              >
+            </li>
+            <li class="contact-list__item">
+              <a href="tel:+00000000" class="contact-list__link">Phone</a>
+            </li>
+          </ul>
+          <div class="contact-list__box-icon-container">
+            <img
+              src="../mattco/assets/email.svg"
+              alt=""
+              class="contact-list__box-icon"
+            />
+          </div>
+        </div>
       </section>
     </main>
 

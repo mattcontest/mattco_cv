@@ -1,3 +1,36 @@
+/* Dark Mode */
+
+body.dark {
+  background-color: #17182f;
+  color: #f4e4c1;
+}
+
+body.dark .section--about {
+  background-color: #171724;
+  color: #ffffff;
+}
+
+body.dark .section--skills {
+  background-color: #f8dbab;
+  color: black;
+}
+body.dark .section--experience {
+  background-color: #f8dbab;
+  color: black;
+}
+body.dark .section--education {
+  background-color: #f8dbab;
+  color: black;
+}
+body.dark .section--contacts {
+  background-color: #f8dbab;
+  color: black;
+}
+body.dark .footer {
+  background-color: #f1dac4;
+  color: black;
+}
+
 @font-face {
   font-family: "Cabinet";
   src: url("../assets/fonts/CabinetGrotesk-Regular.otf");
@@ -98,7 +131,7 @@ header {
   align-items: center;
   gap: 12px;
   color: black;
-  font-size: 22px;
+  font-size: 27px;
   font-weight: bold;
 }
 
@@ -119,6 +152,9 @@ header {
   font-size: 24px;
   cursor: pointer;
   color: #999;
+}
+.modal__close:hover {
+  opacity: 20%;
 }
 
 .modal__icon {
@@ -207,7 +243,7 @@ header {
 
 .project-card__title.neu {
   font-size: 15px;
-  border: solid red;
+  /* border: solid red; */
 }
 
 .section--about {
@@ -361,7 +397,7 @@ a {
 }
 
 footer {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
   justify-content: center;
 }
@@ -629,6 +665,8 @@ footer {
   }
 
   .about__box {
-    display: block;
+    /* display: block; */
+    display: flex;
+    flex-direction: row;
   }
 }

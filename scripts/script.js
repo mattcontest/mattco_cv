@@ -1,12 +1,15 @@
 // Menu Modal Toggle
 
 const mobileBtn = document.querySelector(".header__menu-mobile");
+const mobileBtn_icon = document.querySelector(".header__menu-mobile-icon");
 const closeBtn = document.querySelector(".modal__close");
 const modal = document.querySelector(".modal");
 const modalLinks = document.querySelectorAll(".modal__link");
 const themeToggle = document.querySelector(".nav__toggle");
-const modalThemeToggle = document.querySelector(".nav__toggle");
+const modalThemeToggle = document.querySelector(".modal__theme-toggle");
 const body = document.body;
+const mattco_logo = document.querySelector(".header__logo-icon");
+// const mobileBtn_dark_icon = document.querySelector(".modal__theme-toggle-icon");
 
 // Opening modal once we click on the mobile menu (sandiwch bar)
 mobileBtn.addEventListener("click", () => {
@@ -38,13 +41,29 @@ modal.addEventListener("click", (e) => {
 function toggleTheme() {
   body.classList.toggle("dark");
   const isDark = body.classList.contains("dark");
+  mattco_logo.src = isDark
+    ? "./assets/mattco_logo_dark.svg"
+    : "./assets/mattco_logo.svg";
+
+  mobileBtn_icon.src = isDark
+    ? "./assets/modal_dark_menu.svg"
+    : "./assets/menu.svg";
+
+  //   mobileBtn_dark_icon.src = isDark
+  //     ? "./assets/modal_dark_menu.svg"
+  //     : "./assets/modal_theme_toggle.svg";
+
   localStorage.setItem("theme", isDark ? "dark" : "light");
 }
 
 // Loading set preference
 if (localStorage.getItem("theme") == "dark") {
   body.classList.add("dark");
+  console.log("Loading Dark Mode as per saved preference");
 }
 
 themeToggle.addEventListener("click", toggleTheme);
-modalThemeToggle.addEventListener("click", toggleTheme);
+modalThemeToggle.addEventListener("click", (e) => {
+  toggleTheme();
+  modal.classList.remove("modal_is_open");
+});

@@ -26,8 +26,8 @@ body.dark .section--contacts {
   background-color: #f8dbab;
   color: black;
 }
-body.dark .footer {
-  background-color: #f1dac4;
+body.dark footer {
+  background: #f1dac4;
   color: black;
 }
 
@@ -377,6 +377,10 @@ nav {
   margin-right: 24px; */
 }
 
+.nav__item:hover {
+  background: #d89c9c;
+}
+
 .nav__link {
   /* font-weight: bold; */
   letter-spacing: 2px;
@@ -438,6 +442,10 @@ footer {
     letter-spacing: 0;
   }
 
+  footer {
+    background: #e8e9ee;
+  }
+
   /* .skill__box-nut {
     display: block;
   } */
@@ -495,6 +503,10 @@ footer {
 
   main {
     grid-template-columns: 1fr 1fr;
+  }
+
+  footer {
+    background: #e8e9ee;
   }
 
   .section--about {

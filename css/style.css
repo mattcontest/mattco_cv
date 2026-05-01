@@ -400,6 +400,11 @@ a {
   margin-bottom: auto;
 }
 
+.contact-list__item-icon {
+  height: 45px;
+  width: 45px;
+}
+
 footer {
   /* border: 2px solid red; */
   display: flex;

@@ -1,5 +1,5 @@
 // Menu Modal Toggle
-
+const audio = document.querySelector(".welcome__bip");
 const scrollTop = document.querySelector(".scroll_up");
 const logo_btn = document.querySelector(".header__logo-icon");
 const mobileBtn = document.querySelector(".header__menu-mobile");
@@ -12,6 +12,15 @@ const modalThemeToggle = document.querySelector(".modal__theme-toggle");
 const body = document.body;
 const mattco_logo = document.querySelector(".header__logo-icon");
 // const mobileBtn_dark_icon = document.querySelector(".modal__theme-toggle-icon");
+let hasPlayed = false;
+
+document.addEventListener("click", () => {
+  //   if (!hasPlayed) {
+  //     audio.play();
+  //     hasPlayed = true;
+  //   }
+  audio.play();
+});
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 300) {

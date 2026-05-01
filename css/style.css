@@ -41,6 +41,27 @@ body.dark footer {
   src: url("../assets/fonts/CabinetGrotesk-Bold.otf");
 }
 
+.scroll_up {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background-color: #0f1233;
+  color: #f4e4c1;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  z-index: 50;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.scroll_up-visible {
+  display: block;
+}
+
 .about__box {
   display: flex;
   flex-direction: column;
@@ -50,6 +71,14 @@ body.dark footer {
 .about__icon {
   height: 250px;
   width: 250px;
+}
+
+.header__home-link {
+  display: flex;
+  align-items: baseline;
+  text-decoration: none;
+  color: inherit;
+  margin-right: auto;
 }
 
 body {

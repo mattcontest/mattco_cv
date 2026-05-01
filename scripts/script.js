@@ -1,5 +1,7 @@
 // Menu Modal Toggle
 
+const scrollTop = document.querySelector(".scroll_up");
+const logo_btn = document.querySelector(".header__logo-icon");
 const mobileBtn = document.querySelector(".header__menu-mobile");
 const mobileBtn_icon = document.querySelector(".header__menu-mobile-icon");
 const closeBtn = document.querySelector(".modal__close");
@@ -10,6 +12,18 @@ const modalThemeToggle = document.querySelector(".modal__theme-toggle");
 const body = document.body;
 const mattco_logo = document.querySelector(".header__logo-icon");
 // const mobileBtn_dark_icon = document.querySelector(".modal__theme-toggle-icon");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    scrollTop.classList.add("scroll_up-visible");
+  } else {
+    scrollTop.classList.remove("scroll_up-visible");
+  }
+});
+
+scrollTop.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
 
 // Opening modal once we click on the mobile menu (sandiwch bar)
 mobileBtn.addEventListener("click", () => {

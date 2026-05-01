@@ -68,6 +68,9 @@ body.dark footer {
   align-items: center;
 }
 
+.degree--card_icon {
+  margin-right: 20px;
+}
 .about__icon {
   height: 250px;
   width: 250px;
@@ -79,6 +82,10 @@ body.dark footer {
   text-decoration: none;
   color: inherit;
   margin-right: auto;
+}
+
+.degree--card_descriptor {
+  display: flex;
 }
 
 body {

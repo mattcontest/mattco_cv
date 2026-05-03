@@ -101,6 +101,12 @@ body.dark footer {
   display: none;
   z-index: 50;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  /* background-image: url("../assets/up.svg"); */
+}
+
+.scroll_up-icon {
+  height: 100%;
+  width: 100%;
 }
 
 .scroll_up-visible {
@@ -206,7 +212,7 @@ header {
   background: white;
   /* width: 90%; */
   width: 73%;
-  height: 53%;
+  height: 64%;
   max-width: 360px;
   border-radius: 16px;
   padding: 1.5rem;

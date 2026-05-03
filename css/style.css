@@ -85,6 +85,15 @@ body.dark footer {
   display: block;
 }
 
+.project-card__title-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.project-card__title-icon:hover {
+  opacity: 70%;
+}
+
 .about__box {
   display: flex;
   flex-direction: column;
@@ -109,6 +118,12 @@ body.dark footer {
 
 .degree--card_descriptor {
   display: flex;
+}
+
+.project-card__title-box {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
 }
 
 body {
@@ -263,6 +278,16 @@ header {
   min-height: 63px;
   border: 2px solid beige;
   background-color: HSL(39, 100%, 97%);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  /* flex-direction: column; */
+}
+
+.skill-card__icon {
+  width: 45px;
+  height: 45px;
+  margin-right: 12px;
 }
 
 .skill__box-icon-container {
@@ -375,7 +400,8 @@ header {
   /* font-size: 20px; */
   font-size: 17px;
   /* border: 2px solid red; */
-  gap: 2px;
+  /* gap: 2px; */
+  margin-right: auto;
   /* margin-left: 31px; */
 }
 
@@ -515,6 +541,7 @@ footer {
   .skill-card__item-icon {
     width: 15px;
     height: 15px;
+    margin-right: 5px;
   }
 
   .nav__link {
@@ -584,6 +611,7 @@ footer {
   .skill-card__item-icon {
     width: 15px;
     height: 15px;
+    /* margin-right: 4px; */
   }
 
   main {

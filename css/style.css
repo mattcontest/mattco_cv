@@ -41,6 +41,28 @@ body.dark footer {
   src: url("../assets/fonts/CabinetGrotesk-Bold.otf");
 }
 
+.nav__toggle:hover {
+  opacity: 60%;
+}
+
+.degree-card__location {
+  margin-top: 0;
+}
+
+.degree-card__dates {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.degree-card__degree {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.degree-card__title {
+  margin-bottom: 0;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;

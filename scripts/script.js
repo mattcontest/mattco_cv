@@ -23,9 +23,9 @@ const mattco_logo = document.querySelector(".header__logo-icon");
 // const mobileBtn_dark_icon = document.querySelector(".modal__theme-toggle-icon");
 let hasPlayed = false;
 
-document.addEventListener("click", () => {
-  audio.play();
-});
+// document.addEventListener("click", () => {
+//   audio.play();
+// });
 
 // Scrolling Up Functionality
 window.addEventListener("scroll", () => {
@@ -87,8 +87,12 @@ if (localStorage.getItem("theme") == "dark") {
   console.log("Loading Dark Mode as per saved preference");
 }
 
-themeToggle.addEventListener("click", toggleTheme);
+themeToggle.addEventListener("click", () => {
+  audio.play();
+  toggleTheme();
+});
 modalThemeToggle.addEventListener("click", (e) => {
+  audio.play();
   toggleTheme();
   modal.classList.remove("modal_is_open");
 });

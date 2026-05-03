@@ -41,6 +41,29 @@ body.dark footer {
   src: url("../assets/fonts/CabinetGrotesk-Bold.otf");
 }
 
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+  max-width: 400px;
+}
+
+.contact-form_box {
+  margin-bottom: auto;
+}
+
+.contact-form__title {
+  font-family: "Cabinet Bold";
+  margin: 0 0 8px 0;
+}
+
+.project-card__description {
+  margin-top: 4px;
+  max-width: 231px;
+  height: 54px;
+}
+
 .scroll_up {
   position: fixed;
   bottom: 24px;
@@ -277,8 +300,24 @@ header {
   overflow: hidden; */
 }
 
+.project-card {
+  margin-bottom: 17px;
+  margin-right: 51px;
+}
+
+.project-card__tag {
+  margin-bottom: 0px;
+}
+
+.project-card__title {
+  margin-bottom: 0;
+}
+
 .project-card__title.neu {
+  margin-top: 42px;
   font-size: 15px;
+  margin-bottom: 8px;
+  width: 195px;
   /* border: solid red; */
 }
 
@@ -433,7 +472,7 @@ a {
   gap: 20px;
   padding: 0;
   margin: 0;
-  margin-bottom: auto;
+  /* margin-bottom: auto; */
 }
 
 .contact-list__item-icon {
@@ -515,6 +554,11 @@ footer {
     padding-right: 0;
     padding-left: 0;
     /* border: solid purple; */
+  }
+
+  .project-card {
+    /* margin-bottom: 17px; */
+    margin-right: 0;
   }
 
   .skill-card__box {
@@ -650,6 +694,10 @@ footer {
 
   .section--about {
     grid-column: auto;
+  }
+
+  .wtwr {
+    margin-left: 21px;
   }
 
   .skill-grid {

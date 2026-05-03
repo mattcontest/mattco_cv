@@ -1,3 +1,12 @@
+/*
+
+    * Used AI assistance during debugging, code review and improvements.
+    * Used Claude AI for debugging and implementing scrollTop functionality.
+    * Used as template code used in past projects completed with during my bootcamp by TripleTen
+    * Used Normalize.css by Nicholas Gallagher 
+
+*/
+
 // Menu Modal Toggle
 const audio = document.querySelector(".welcome__bip");
 const scrollTop = document.querySelector(".scroll_up");
@@ -15,13 +24,10 @@ const mattco_logo = document.querySelector(".header__logo-icon");
 let hasPlayed = false;
 
 document.addEventListener("click", () => {
-  //   if (!hasPlayed) {
-  //     audio.play();
-  //     hasPlayed = true;
-  //   }
   audio.play();
 });
 
+// Scrolling Up Functionality
 window.addEventListener("scroll", () => {
   if (window.scrollY > 300) {
     scrollTop.classList.add("scroll_up-visible");
@@ -71,10 +77,6 @@ function toggleTheme() {
   mobileBtn_icon.src = isDark
     ? "./assets/modal_dark_menu.svg"
     : "./assets/menu.svg";
-
-  //   mobileBtn_dark_icon.src = isDark
-  //     ? "./assets/modal_dark_menu.svg"
-  //     : "./assets/modal_theme_toggle.svg";
 
   localStorage.setItem("theme", isDark ? "dark" : "light");
 }

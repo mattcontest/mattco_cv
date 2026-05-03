@@ -564,6 +564,7 @@ footer {
   body {
     padding-right: 0;
     padding-left: 0;
+    border: 1px solid gainsboro;
   }
 
   .skill-card__item-icon {

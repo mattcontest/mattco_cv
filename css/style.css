@@ -41,6 +41,14 @@ body.dark footer {
   src: url("../assets/fonts/CabinetGrotesk-Bold.otf");
 }
 
+.contact-form__feedback {
+  font-size: larger;
+  font-style: italic;
+}
+.contact-form_box-hidden {
+  display: none;
+}
+
 .nav__toggle:hover {
   opacity: 60%;
 }

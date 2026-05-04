@@ -8,6 +8,11 @@
 */
 
 // Menu Modal Toggle
+const form_box = document.querySelector(".contact-form_box");
+const form_succes = document.querySelector(".contact-form__feedback");
+const contact_form = document.getElementById("contact-form");
+const contact_message = document.getElementById("contact-message");
+const contact_email = document.getElementById("contact-email");
 const audio = document.querySelector(".welcome__bip");
 const scrollTop = document.querySelector(".scroll_up");
 const logo_btn = document.querySelector(".header__logo-icon");
@@ -22,6 +27,14 @@ const body = document.body;
 const mattco_logo = document.querySelector(".header__logo-icon");
 // const mobileBtn_dark_icon = document.querySelector(".modal__theme-toggle-icon");
 let hasPlayed = false;
+
+contact_form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  //   console.log("Hooked up!");
+  //   console.log("Email", contact_email.value, "Message", contact_message.value);
+  form_succes.textContent = "Thank you for your message! 😄";
+  form_box.classList.add("contact-form_box-hidden");
+});
 
 // document.addEventListener("click", () => {
 //   audio.play();

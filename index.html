@@ -475,7 +475,7 @@
             </li>
             <li class="contact-list__item">
               <a
-                href="https://www.linkedin.com/in/mattcont/"
+                href="https://www.linkedin.com/in//"
                 class="contact-list__link"
               >
                 <img
@@ -505,7 +505,7 @@
             </li>
           </ul>
           <div class="contact-form_box">
-            <form action="" class="contact-form" novalidate>
+            <form id="contact-form" action="" class="contact-form" novalidate>
               <h3 class="contact-form_message">Say Hi!</h3>
               <label for="contact-email" class="contact-form__label">
                 Email
@@ -522,14 +522,16 @@
                 >Message</label
               >
               <textarea
-                type="text"
                 id="contact-message"
                 class="contanct-form__text"
-                rows="4"
+                rows="2"
+                placeholder="Hi!"
+                required
               ></textarea>
-              <button>Submit</button>
+              <button type="submit" class="contact-form__submit">Submit</button>
             </form>
           </div>
+          <p class="contact-form__feedback"></p>
           <div class="contact-list__box-icon-container">
             <img
               src="./assets/email.svg"

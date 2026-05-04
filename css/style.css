@@ -34,11 +34,13 @@ body.dark footer {
 @font-face {
   font-family: "Cabinet";
   src: url("../assets/fonts/CabinetGrotesk-Regular.otf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Cabinet-Bold";
   src: url("../assets/fonts/CabinetGrotesk-Bold.otf");
+  font-display: swap;
 }
 
 .contact-form__feedback {

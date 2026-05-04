@@ -32,6 +32,15 @@ contact_form.addEventListener("submit", (e) => {
   e.preventDefault();
   //   console.log("Hooked up!");
   //   console.log("Email", contact_email.value, "Message", contact_message.value);
+  if (
+    contact_message.value.trim() === "" ||
+    contact_email.value.trim() === ""
+  ) {
+    return (form_succes.textContent =
+      "Please enter a valid email  and a valid message!");
+  }
+
+  console.log(contact_message.value.trim(), contact_email.value.trim());
   form_succes.textContent = "Thank you for your message! 😄";
   form_box.classList.add("contact-form_box-hidden");
 });

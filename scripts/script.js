@@ -2,7 +2,7 @@
 
     * Used AI assistance during debugging, code review and improvements.
     * Used Claude AI for debugging and implementing scrollTop functionality.
-    * Used as template code used in past projects completed with during my bootcamp by TripleTen
+    * Used as template code from my past projects completed  during my bootcamp with TripleTen
     * Used Normalize.css by Nicholas Gallagher 
 
 */
@@ -30,7 +30,7 @@ let hasPlayed = false;
 
 contact_form.addEventListener("submit", (e) => {
   e.preventDefault();
-  //   console.log("Hooked up!");
+  //   console.log("Wired up!");
   //   console.log("Email", contact_email.value, "Message", contact_message.value);
   if (
     contact_message.value.trim() === "" ||

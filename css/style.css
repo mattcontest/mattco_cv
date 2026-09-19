@@ -536,7 +536,7 @@ a {
   gap: 20px;
   padding: 0;
   margin: 0;
-  /* margin-bottom: auto; */
+  margin-bottom: auto;
 }
 
 .contact-list__item-icon {

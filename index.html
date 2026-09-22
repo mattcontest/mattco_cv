@@ -11,550 +11,219 @@
     <title>Mattco CV</title>
     <!-- Remember to mention you are using Normalize!! -->
     <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Bootstrap CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- custom stylesheet disabled to prefer Bootstrap-only styling -->
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
   </head>
   <body>
-    <div class="modal" id="menu-modal">
-      <div class="modal__content">
-        <div class="modal__header">
-          <h2 class="modal__title">Menu</h2>
-          <button class="modal__close">X</button>
-        </div>
+    <!-- Removed custom modal in favor of Bootstrap navbar collapse -->
 
-        <ul class="modal__list">
-          <li class="modal__item">
-            <a href="#about" class="modal__link">
-              <img src="./assets/modal__about.svg" alt="" class="modal__icon" />
-              About
-            </a>
-          </li>
-          <li class="modal__item">
-            <a href="#skills" class="modal__link">
-              <img
-                src="./assets/modal__skills.svg"
-                alt=""
-                class="modal__icon"
-              />
-              Skills
-            </a>
-          </li>
-          <li class="modal__item">
-            <a href="#experience" class="modal__link">
-              <img src="./assets/modal__cv.svg" alt="" class="modal__icon" />
-              Experience
-            </a>
-          </li>
-          <li class="modal__item">
-            <a href="#education" class="modal__link">
-              <img
-                src="./assets/modal__education.svg"
-                alt=""
-                class="modal__icon"
-              />
-              Education
-            </a>
-          </li>
-          <li class="modal__item">
-            <a href="#contacts" class="modal__link">
-              <img
-                src="./assets/modal__contacts.svg"
-                alt=""
-                class="modal__icon"
-              />
-              Contacts
-            </a>
-          </li>
-        </ul>
-
-        <button class="modal__theme-toggle">
-          <img
-            src="./assets/modal_theme_toggle.svg"
-            alt=""
-            class="modal__theme-toggle-icon"
-          />
+    <!-- Header removed; brand moved into Bootstrap navbar -->
+    <nav class="nav navbar navbar-expand-lg navbar-light bg-white shadow-sm mb-4">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="./assets/mattco_logo.svg" alt="mattco logo" height="32" class="d-inline-block align-text-top me-2">
+          <span class="fw-bold">Mattco</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mattcoNavbar" aria-controls="mattcoNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-      </div>
-    </div>
 
-    <header class="header">
-      <a href="#" class="header__home-link">
-        <img
-          class="header__logo-icon"
-          src="./assets/mattco_logo.svg"
-          alt="mattco logo"
-        />
-        <h1 class="header__logo">Mattco</h1>
-      </a>
-      <button class="header__menu-mobile">
-        <img class="header__menu-mobile-icon" src="./assets/menu.svg" alt="" />
-      </button>
-    </header>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a href="#about" class="nav__link">About</a>
-        </li>
-        <li class="nav__item">
-          <a href="#skills" class="nav__link">Skills</a>
-        </li>
-        <li class="nav__item">
-          <a href="#experience" class="nav__link">Experience</a>
-        </li>
-        <li class="nav__item">
-          <a href="#education" class="nav__link">Education</a>
-        </li>
-        <li class="nav__item">
-          <a href="#contacts" class="nav__link">Contacts</a>
-        </li>
-        <!-- <li><a href="" class="nav_link">Night/Day Toggle</a></li> -->
-      </ul>
-      <button
-        type="button"
-        class="nav__toggle"
-        aria-label="Toggle dark mode"
-      ></button>
+        <div class="collapse navbar-collapse" id="mattcoNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <main>
-      <section class="section section--about" id="about">
-        <h2 class="section__title">About</h2>
-        <div class="about__box">
-          <img src="./assets/cute_avatar.svg" alt="" class="about__icon" />
-          <p class="about__bio">
-            Product-focused frontend developer with a strong foundation in
-            full-stack web development, React, and user-centric design.
-            Experienced in building responsive, accessible web applications from
-            Figma prototypes to production deployment. Seeking to contribute as
-            a junior frontend engineer on teams where UX, clean code, and
-            business impact intersect
-          </p>
+      <section class="section section--about py-5" id="about">
+        <div class="container">
+            <h2 class="section__title display-5 fw-bold mb-4">About</h2>
+              <div class="row align-items-center">
+            <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+              <img src="./assets/cute_avatar.svg" alt="avatar" class="img-fluid rounded-circle" style="max-width:220px;">
+            </div>
+            <div class="col-12 col-md-8">
+              <p class="lead mb-0">Product-focused frontend developer with a strong foundation in full-stack web development, React, and user-centric design. Experienced in building responsive, accessible web applications from Figma prototypes to production deployment. Seeking to contribute as a junior frontend engineer on teams where UX, clean code, and business impact intersect.</p>
+            </div>
+          </div>
         </div>
       </section>
       <!-- <div class="content_grid">
 
     </div> -->
       <section class="section section--skills" id="skills">
-        <h2 class="section__title">Skills</h2>
+        <div class="container">
+        <h2 class="section__title display-5 fw-bold">Skills</h2>
         <div class="skill__box">
-          <div class="skill-grid">
-            <article class="skill-card">
-              <div class="skill-card__box">
-                <h3 class="skill-card__title">Coding Languages</h3>
-                <img
-                  src="./assets/coding_icon.svg"
-                  alt=""
-                  class="skill-card__icon"
-                />
+          <div class="row g-3">
+            <article class="skill-card col-12 col-md-6 col-lg-3">
+              <div class="skill-card__box card p-3 h-100">
+                <div class="d-flex align-items-center">
+                  <h3 class="skill-card__title mb-0">Languages</h3>
+                  <img src="./assets/coding_icon.svg" alt="" class="skill-card__icon ms-2 w-50" />
+                </div>
+                <ul class="skill-card__list mt-3 list-unstyled">
+                  <li class="skill-card__item d-flex align-items-center"><img src="./assets/js_icon.svg" class="skill-card__item-icon me-2" alt="">JavaScript</li>
+                  <li class="skill-card__item d-flex align-items-center"><img src="./assets/html_5.svg" class="skill-card__item-icon me-2" alt="">HTML</li>
+                  <li class="skill-card__item d-flex align-items-center"><img src="./assets/css3_icon.svg" class="skill-card__item-icon me-2" alt="">CSS3</li>
+                  <li class="skill-card__item d-flex align-items-center"><img src="./assets/python_icon.svg" class="skill-card__item-icon me-2" alt="">Python 3</li>
+                  <li class="skill-card__item d-flex align-items-center"><img src="./assets/java_icon.svg" class="skill-card__item-icon me-2" alt="">Java</li>
+                </ul>
               </div>
-              <ul class="skill-card__list">
-                <li class="skill-card__item">
-                  <img
-                    src="./assets/js_icon.svg"
-                    alt=""
-                    class="skill-card__item-icon"
-                  />
-                  JavaScript
-                </li>
-                <li class="skill-card__item">
-                  <img
-                    src="./assets/html_5.svg"
-                    class="skill-card__item-icon"
-                    alt=""
-                  />
-                  HTML
-                </li>
-                <li class="skill-card__item">
-                  <img
-                    src="./assets/css3_icon.svg"
-                    class="skill-card__item-icon"
-                    alt=""
-                  />
-                  CSS3
-                </li>
-                <li class="skill-card__item">
-                  <img
-                    src="./assets/python_icon.svg"
-                    alt=""
-                    class="skill-card__item-icon"
-                  />
-                  Python 3
-                </li>
-                <li class="skill-card__item">
-                  <img
-                    src="./assets/java_icon.svg"
-                    class="skill-card__item-icon"
-                    alt=""
-                  />
-                  Java
-                </li>
-              </ul>
             </article>
-            <article class="skill-card">
-              <div class="skill-card__box">
-                <h3 class="skill-card__title">Frameworks</h3>
-                <img
-                  src="./assets/frameworks.svg"
-                  alt=""
-                  class="skill-card__icon"
-                />
+            <article class="skill-card col-12 col-md-6 col-lg-3">
+              <div class="skill-card__box card p-3 h-100">
+                <div class="d-flex align-items-center">
+                  <h3 class="skill-card__title mb-0">Frameworks</h3>
+                  <img src="./assets/frameworks.svg" alt="" class="skill-card__icon ms-2 w-50" />
+                </div>
+                <ul class="skill-card__list mt-3 list-unstyled">
+                  <li class="skill-card__item d-flex align-items-center"><img src="./assets/react_icon.svg" class="skill-card__item-icon me-2" alt="">React</li>
+                  <li class="skill-card__item d-flex align-items-center"><img src="./assets/next_icon.svg" class="skill-card__item-icon me-2" alt="">Node.js</li>
+                  <li class="skill-card__item d-flex align-items-center"><img src="./assets/express_icon.svg" class="skill-card__item-icon me-2" alt="">Express.js</li>
+                  <li class="skill-card__item d-flex align-items-center"><img src="./assets/tailwind_icon.svg" class="skill-card__item-icon me-2" alt="">Tailwind</li>
+                  <li class="skill-card__item d-flex align-items-center"><img src="./assets/mongoose_icon.svg" class="skill-card__item-icon me-2" alt="">Mongoose</li>
+                </ul>
               </div>
-              <ul class="skill-card__list">
-                <li class="skill-card__item">
-                  <img
-                    src="./assets/react_icon.svg"
-                    class="skill-card__item-icon"
-                    alt=""
-                  />
-                  React
-                </li>
-                <li class="skill-card__item">
-                  <img
-                    src="./assets/next_icon.svg"
-                    alt=""
-                    class="skill-card__item-icon"
-                  />
-                  Node.js
-                </li>
-                <li class="skill-card__item">
-                  <img
-                    src="./assets/express_icon.svg"
-                    class="skill-card__item-icon"
-                    alt=""
-                  />
-                  Express.js
-                </li>
-                <li class="skill-card__item">
-                  <img
-                    src="./assets/tailwind_icon.svg"
-                    class="skill-card__item-icon"
-                    alt=""
-                  />
-                  Tailwind
-                </li>
-                <li class="skill-card__item">
-                  <img
-                    src="./assets/mongoose_icon.svg"
-                    class="skill-card__item-icon"
-                    alt=""
-                  />
-                  Mongoose
-                </li>
-              </ul>
             </article>
-            <article class="skill-card">
-              <div class="skill-card__box">
-                <h3 class="skill-card__title">Database</h3>
-                <img
-                  src="./assets/database.svg"
-                  alt=""
-                  class="skill-card__icon"
-                />
+            <article class="skill-card col-12 col-md-6 col-lg-3">
+              <div class="skill-card__box card p-3 h-100">
+                <div class="d-flex align-items-center">
+                  <h3 class="skill-card__title mb-0">Database</h3>
+                  <img src="./assets/database.svg" alt="" class="skill-card__icon ms-2 w-50" />
+                </div>
+                <ul class="skill-card__list mt-3 list-unstyled">
+                  <li class="skill-card__item d-flex align-items-center"><img src="./assets/mongodb_icon.svg" class="skill-card__item-icon me-2" alt="">MongoDB</li>
+                  <li class="skill-card__item d-flex align-items-center"><img src="./assets/mysql_icon.svg" class="skill-card__item-icon me-2" alt="">MySQL</li>
+                  <li class="skill-card__item d-flex align-items-center"><img src="./assets/sql_icon.svg" class="skill-card__item-icon me-2" alt="">SQL</li>
+                  <li class="skill-card__item d-flex align-items-center"><img src="./assets/postres_icon.svg" class="skill-card__item-icon me-2" alt="">PostgreSQL</li>
+                  <li class="skill-card__item d-flex align-items-center"><img src="./assets/firebase_icon.svg" class="skill-card__item-icon me-2" alt="">Firebase</li>
+                </ul>
               </div>
-              <ul class="skill-card__list">
-                <li class="skill-card__item">
-                  <img
-                    src="./assets/mongodb_icon.svg"
-                    class="skill-card__item-icon"
-                    alt=""
-                  />
-                  MongoDB
-                </li>
-                <li class="skill-card__item">
-                  <img
-                    src="./assets/mysql_icon.svg"
-                    class="skill-card__item-icon"
-                    alt=""
-                  />
-                  MySQL
-                </li>
-                <li class="skill-card__item">
-                  <img
-                    src="./assets/sql_icon.svg"
-                    class="skill-card__item-icon"
-                    alt=""
-                  />
-                  SQL
-                </li>
-                <li class="skill-card__item">
-                  <img
-                    src="./assets/postres_icon.svg"
-                    class="skill-card__item-icon"
-                    alt=""
-                  />
-                  PostgreSQL
-                </li>
-                <li class="skill-card__item">
-                  <img
-                    src="./assets/firebase_icon.svg"
-                    class="skill-card__item-icon"
-                    alt=""
-                  />
-                  Firebase
-                </li>
-              </ul>
             </article>
-            <article class="skill-card">
-              <div class="skill-card__box">
-                <h3 class="skill-card__title">Tools</h3>
-                <img src="./assets/tools.svg" alt="" class="skill-card__icon" />
+            <article class="skill-card col-12 col-md-6 col-lg-3">
+              <div class="skill-card__box card p-3 h-100">
+                <div class="d-flex align-items-center">
+                  <h3 class="skill-card__title mb-0">Tools</h3>
+                  <img src="./assets/tools.svg" alt="" class="skill-card__icon ms-2 w-50" />
+                </div>
+                <ul class="skill-card__list mt-3 list-unstyled">
+                  <li class="skill-card__item d-flex align-items-center"><img src="./assets/git_icon.svg" class="skill-card__item-icon me-2" alt="">Git</li>
+                  <li class="skill-card__item d-flex align-items-center"><img src="./assets/figma_icon.svg" class="skill-card__item-icon me-2" alt="">Figma</li>
+                  <li class="skill-card__item d-flex align-items-center"><img src="./assets/jest_icon.svg" class="skill-card__item-icon me-2" alt="">Jest</li>
+                  <li class="skill-card__item d-flex align-items-center"><img src="./assets/webpack_icon.svg" class="skill-card__item-icon me-2" alt="">Webpack</li>
+                  <li class="skill-card__item d-flex align-items-center"><img src="./assets/next_icon.svg" class="skill-card__item-icon me-2" alt="">Nginx</li>
+                </ul>
               </div>
-              <ul class="skill-card__list">
-                <li class="skill-card__item">
-                  <img
-                    src="./assets/git_icon.svg"
-                    class="skill-card__item-icon"
-                    alt=""
-                  />
-                  Git
-                </li>
-                <li class="skill-card__item">
-                  <img
-                    src="./assets/figma_icon.svg"
-                    class="skill-card__item-icon"
-                    alt=""
-                  />
-                  Figma
-                </li>
-                <li class="skill-card__item">
-                  <img
-                    src="./assets/jest_icon.svg"
-                    alt=""
-                    class="skill-card__item-icon"
-                  />
-                  Jest
-                </li>
-                <!-- <li class="skill-card__item">
-                  Dev Tools
-                  <img
-                    src="./assets/webpack_icon.svg"
-                    alt=""
-                    class="skill-card__item-icon"
-                  />
-                </li> -->
-                <li class="skill-card__item">
-                  <img
-                    src="./assets/webpack_icon.svg"
-                    alt=""
-                    class="skill-card__item-icon"
-                  />
-                  Webpack
-                </li>
-                <li class="skill-card__item">
-                  <img
-                    src="./assets/next_icon.svg"
-                    alt=""
-                    class="skill-card__item-icon"
-                  />
-                  Nginx
-                </li>
-              </ul>
             </article>
-          </div>
-          <div class="skill__box-icon-container">
-            <img class="skill__box-nut" src="./assets/skills_nut.svg" alt="" />
           </div>
         </div>
       </section>
+      
+      <section class="section section--experience py-5" id="experience">
+        <div class="container bg-light rounded shadow-sm p-4">
+          <div class="container ">
+            <div class="d-flex justify-content-between align-items-center mb-4">
 
-      <section class="section section--experience" id="experience">
-        <h2 class="section__title">Experience</h2>
-        <div class="experience__box">
-          <div class="experience_test">
-            <div class="experience-grid">
-              <article class="project-card">
-                <div class="project-card__title-box">
-                  <h3 class="project-card__title">NewsExplorer</h3>
-                  <a
-                    href="https://github.com/mattcontest/news_explorer_frontend"
-                  >
-                    <img
-                      class="project-card__title-icon"
-                      src="./assets/open_link.svg"
-                      alt=""
-                    />
-                  </a>
+              <h2 class="section__title display-5 fw-bold mb-4  ">Experience
+                
+              </h2>
+                <div class="skill__box-icon-container mt-3 text-end">
+                  <img class="skill__box-nut" src="./assets/skills_nut.svg" alt="" style="width: 25%;" />
                 </div>
-                <p class="project-card__tag">Full Stack Web App</p>
-                <p class="project-card__description">
-                  A full-stack web application that allows users to find and
-                  save their news. Users can bookmark and save their favorite
-                  news articles.
-                </p>
-              </article>
-              <article class="project-card wtwr">
-                <div class="project-card__title-box">
-                  <h3 class="project-card__title">WTWR</h3>
-                  <a href="https://github.com/mattcontest/se_project_react">
-                    <img
-                      class="project-card__title-icon"
-                      src="./assets/open_link.svg"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <p class="project-card__tag">Full Stack Web App</p>
-                <p class="project-card__description">
-                  A full-stack web application that allows users to share and
-                  engage with notes. Users can create and post notes.
-                </p>
-              </article>
-              <article class="project-card">
-                <h3 class="project-card__title neu">
-                  Northeastern University - Graduate Teaching Assistant
-                </h3>
-                <p class="project-card__tag">Sep 2023 - Dec 2023</p>
-                <p class="project-card__description">
-                  Assisted in teaching CS5500 Foundations of Software
-                  Engineering by supporting 29 students.
-                </p>
-                <!-- <p class="project-card__description">Description here later</p> -->
-                <!-- <p class="project-card__description">Description here later</p> -->
-              </article>
             </div>
           </div>
-          <div class="experience__box-icon-container">
-            <img src="./assets/cv_icon.svg" alt="" class="experience__box-cv" />
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--education" id="education">
-        <h2 class="section__title">Education</h2>
-        <div class="education__box">
-          <div class="education__box-cards">
-            <article class="degree-card">
-              <div class="degree--card_descriptor">
-                <img
-                  src="./assets/edu-icon.svg"
-                  alt=""
-                  class="degree--card_icon"
-                />
-                <div class="degree--card_info">
-                  <h3 class="degree-card__title">
-                    Technological University of Dublin
-                  </h3>
-                  <p class="degree-card__dates">Jan 2026 - May 2026</p>
-                  <p class="degree-card__degree">
-                    Master Qualifier in Computing
-                  </p>
-                  <p class="degree-card__location">Dublin, Ireland</p>
+          <div class="row g-4">
+            <div class="col-12 col-md-6">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <h5 class="card-title mb-0">NewsExplorer</h5>
+                    <a href="https://github.com/mattcontest/news_explorer_frontend" class="ms-2"><img src="./assets/open_link.svg" alt="" height="20"></a>
+                  </div>
+                  <p class="text-muted mb-1">Full Stack Web App</p>
+                  <p class="card-text">A full-stack web application that allows users to find and save their news. Users can bookmark and save their favorite news articles.</p>
                 </div>
               </div>
-            </article>
-            <article class="degree-card">
-              <div class="degree--card_descriptor">
-                <img
-                  src="./assets/edu-icon.svg"
-                  alt=""
-                  class="degree--card_icon"
-                />
-                <div class="degree--card_info">
-                  <h3 class="degree-card__title">Northeastern University</h3>
-                  <p class="degree-card__dates">Sep 2021 - Dec 2023</p>
-                  <p class="degree-card__degree">
-                    Master of Science in Computer Science
-                  </p>
-                  <p class="degree-card__location">San Jose, California</p>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <h5 class="card-title mb-0">WTWR</h5>
+                    <a href="https://github.com/mattcontest/se_project_react" class="ms-2"><img src="./assets/open_link.svg" alt="" height="20"></a>
+                  </div>
+                  <p class="text-muted mb-1">Full Stack Web App</p>
+                  <p class="card-text">A full-stack web application that allows users to share and engage with notes. Users can create and post notes.</p>
                 </div>
               </div>
-            </article>
-          </div>
-          <div class="education__box-icon-container">
-            <img
-              src="./assets/college_icon.svg"
-              alt=""
-              class="education__box-icon"
-            />
+            </div>
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Northeastern University - Graduate Teaching Assistant</h5>
+                  <p class="text-muted">Sep 2023 - Dec 2023</p>
+                  <p class="card-text">Assisted in teaching CS5500 Foundations of Software Engineering by supporting 29 students.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section section--contacts" id="contacts">
-        <h2 class="section__title">Contacts</h2>
-        <div class="contact-list__box">
-          <ul class="contact-list">
-            <li class="contact-list__item">
-              <a
-                href="https://github.com/mattcontest"
-                class="contact-list__link"
-              >
-                <img
-                  class="contact-list__item-icon"
-                  src="./assets/github.svg"
-                  alt=""
-                />
-              </a>
-            </li>
-            <li class="contact-list__item">
-              <a
-                href="https://www.linkedin.com/in//"
-                class="contact-list__link"
-              >
-                <img
-                  class="contact-list__item-icon"
-                  src="./assets/linkedin.svg"
-                  alt=""
-                />
-              </a>
-            </li>
-            <li class="contact-list__item">
-              <a href="mailto:contact@mattco.io" class="contact-list__link">
-                <img
-                  class="contact-list__item-icon"
-                  src="./assets/mail_icon.svg"
-                  alt=""
-                />
-              </a>
-            </li>
-            <li class="contact-list__item">
-              <a href="tel:+00000000" class="contact-list__link">
-                <img
-                  class="contact-list__item-icon"
-                  src="./assets/phone_icon.svg"
-                  alt=""
-                />
-              </a>
-            </li>
-          </ul>
-          <div class="contact-form_box-hidden">
-            <form id="contact-form" action="" class="contact-form" novalidate>
-              <h3 class="contact-form_message">Say Hi!</h3>
-              <label for="contact-email" class="contact-form__label">
-                Email
-              </label>
-              <input
-                type="email"
-                id="contact-email"
-                class="contact-form__input"
-                placeholder="mattco@matto.io"
-                required
-              />
-
-              <label for="contact-message" class="contact-form__label"
-                >Message</label
-              >
-              <textarea
-                id="contact-message"
-                class="contanct-form__text"
-                rows="2"
-                placeholder="Hi!"
-                required
-              ></textarea>
-              <button type="submit" class="contact-form__submit">Submit</button>
-            </form>
-          </div>
-          <p class="contact-form__feedback"></p>
-          <div class="contact-list__box-icon-container">
-            <img
-              src="./assets/email.svg"
-              alt=""
-              class="contact-list__box-icon"
-            />
+      <section class="section section--education py-5" id="education">
+        <div class="container bg-light rounded shadow-sm p-4">
+          <h2 class="section__title display-5 fw-bold mb-4">Education</h2>
+          <div class="row g-4">
+            <div class="col-12 col-md-6">
+              <div class="card h-100">
+                <div class="card-body d-flex">
+                  <img src="./assets/edu-icon.svg" alt="" height="48" class="me-3">
+                  <div>
+                    <h5 class="card-title mb-1">Technological University of Dublin</h5>
+                    <p class="mb-1 text-muted">Jan 2026 - May 2026</p>
+                    <p class="mb-0">Master Qualifier in Computing — Dublin, Ireland</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="card h-100">
+                <div class="card-body d-flex">
+                  <img src="./assets/edu-icon.svg" alt="" height="48" class="me-3">
+                  <div>
+                    <h5 class="card-title mb-1">Northeastern University</h5>
+                    <p class="mb-1 text-muted">Sep 2021 - Dec 2023</p>
+                    <p class="mb-0">Master of Science in Computer Science — San Jose, California</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <button type="button" class="scroll_up">
+
+      <section class="section section--contacts py-5" id="contacts">
+        <div class="container bg-light rounded shadow-sm p-4">
+          <h2 class="section__title display-5 fw-bold mb-4">Contacts</h2>
+          <div class="d-flex gap-3 align-items-center mb-3">
+            <a href="https://github.com/mattcontest" class="btn btn-outline-secondary" aria-label="GitHub"><img src="./assets/github.svg" alt="github" height="24"></a>
+            <a href="https://www.linkedin.com/in//" class="btn btn-outline-primary" aria-label="LinkedIn"><img src="./assets/linkedin.svg" alt="linkedin" height="24"></a>
+            <a href="mailto:contact@mattco.io" class="btn btn-outline-success" aria-label="Email"><img src="./assets/mail_icon.svg" alt="email" height="24"></a>
+            <a href="tel:+00000000" class="btn btn-outline-dark" aria-label="Phone"><img src="./assets/phone_icon.svg" alt="phone" height="24"></a>
+          </div>
+        </div>
+      </section>
+      <!-- <button type="button" class="scroll_up">
         <img src="./assets/up.svg" alt="" class="scroll_up-icon" />
-      </button>
+      </button> -->
       <audio
         class="welcome__bip"
         src="./assets/snap.wav"
@@ -563,6 +232,8 @@
     </main>
 
     <footer><p class="footer__text">&copy; Mattco 2026</p></footer>
+    <!-- Bootstrap JS (bundle incl. Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./scripts/script.js"></script>
   </body>
 </html>

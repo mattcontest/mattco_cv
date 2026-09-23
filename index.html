@@ -46,7 +46,7 @@
     </nav>
     <main>
       <section class="section section--about py-5" id="about">
-        <div class="container">
+        <div class="container p-4">
             <h2 class="section__title display-5 fw-bold mb-4">About</h2>
               <div class="row align-items-center">
             <!-- <div class="col-12  col-md-3 text-center mb-3 mb-md-0 "> -->
@@ -64,9 +64,16 @@
       <!-- <div class="content_grid">
 
     </div> -->
-      <section class="section section--skills" id="skills">
-        <div class="container">
-        <h2 class="section__title display-5 fw-bold">Skills</h2>
+      <section class="section section--skills " id="skills">
+        <div class="container p-4 ">
+          <div class="d-flex justify-content-between align-items-center mb-4  w-100">
+
+            <h2 class="section__title display-5 fw-bold mb-0  me-3 ">Skills</h2>
+            <!-- <div class="skill_box-icon-container mt-3 text-end "> -->
+              <img class="skill__box-nut" src="./assets/skills_nut.svg" alt="" style="width: 43px" />
+            <!-- </div> -->
+
+          </div>
         <div class="skill__box">
           <div class="row g-4">
             <article class="skill-card col-12 col-md-6 col-lg-3">
@@ -140,18 +147,23 @@
       </section>
       
       <section class="section section--experience py-5" id="experience">
-        <div class="container bg-light rounded shadow-sm p-4">
-          <div class="container ">
-            <div class="d-flex justify-content-between align-items-center mb-4">
+        <div class="container bg-light rounded shadow-sm p-4 ">
+          <!-- <div class="con"> -->
+            <!-- <div class="d-flex  align-items-center mb-4 w-100  border border-2 border-primary"> -->
+            <div class="d-flex  align-items-center justify-content-between mb-4 w-100 text-end  ">
+            <!-- <div class="d-flex  align-items-center mb-4 w-100 border border-2 border-primary"> -->
 
-              <h2 class="section__title display-5 fw-bold mb-4  ">Experience
-                
-              </h2>
-                <div class="skill__box-icon-container mt-3 text-end">
-                  <img class="skill__box-nut" src="./assets/skills_nut.svg" alt="" style="width: 25%;" />
-                </div>
+              <!-- <h2 class="section__title display-5 fw-bold mb-4  mb-0 "> -->
+                <!-- <div class="skill__box-icon-containers  text-start "> -->
+                  <!-- </div> -->
+                  <h2 class="section__title display-5 fw-bold  mb-0 me-3 ">
+                    Experience
+                    
+                  </h2>
+                  <img class="skill__box-nut" src="./assets/cv_icon.svg" alt="" style="width: 43px;" />
+              <!-- <div class="skill__box-icon-containers mt-3 text-start"> -->
             </div>
-          </div>
+          <!-- </div> -->
           <div class="row g-4">
             <div class="col-12 col-md-6">
               <div class="card h-100">
@@ -192,7 +204,10 @@
 
       <section class="section section--education py-5" id="education">
         <div class="container bg-light rounded shadow-sm p-4">
-          <h2 class="section__title display-5 fw-bold mb-4">Education</h2>
+          <div class="d-flex justify-content-between align-items-center mb-4 w-100"> 
+          <h2 class="section__title display-5 fw-bold ">Education</h2>
+          <img src="./assets/modal__education.svg" alt="" class="skill_box-nut mb-3" style="width: 43px;" />
+          </div>
           <div class="row g-4">
             <div class="col-12 col-md-6">
               <div class="card h-100">
@@ -224,7 +239,11 @@
 
       <section class="section section--contacts py-5" id="contacts">
         <div class="container bg-light rounded shadow-sm p-4">
-          <h2 class="section__title display-5 fw-bold mb-4">Contacts</h2>
+          <div class="d-flex align-items-center mb-4 justify-content-between w-100">
+            <h2 class="section__title display-5 fw-bold ">Contacts</h2>
+            <img src="./assets/email.svg" alt="" class="skill_box-nut" style="width: 43px;" />
+
+          </div>
           <div class="d-flex gap-3 align-items-center mb-3">
             <a href="https://github.com/mattcontest" class="btn btn-outline-secondary" aria-label="GitHub"><img src="./assets/github.svg" alt="github" height="24"></a>
             <a href="https://www.linkedin.com/in//" class="btn btn-outline-primary" aria-label="LinkedIn"><img src="./assets/linkedin.svg" alt="linkedin" height="24"></a>
